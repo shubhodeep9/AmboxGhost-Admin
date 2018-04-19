@@ -42,17 +42,17 @@ Router.map(function () {
         this.route('user', {path: ':user_slug'});
     });
 
-    this.route('settings.general', {path: '/settings/general'});
-    this.route('settings.tags', {path: '/settings/tags'}, function () {
+    this.route('settings.general', {path: '/config/general'});
+    this.route('settings.tags', {path: '/config/tags'}, function () {
         this.route('tag', {path: ':tag_slug'});
         this.route('new');
     });
-    this.route('settings.labs', {path: '/settings/labs'});
-    this.route('settings.code-injection', {path: '/settings/code-injection'});
-    this.route('settings.design', {path: '/settings/design'}, function () {
+    this.route('settings.labs', {path: '/config/labs'});
+    this.route('settings.code-injection', {path: '/config/code-injection'});
+    this.route('settings.design', {path: '/config/design'}, function () {
         this.route('uploadtheme');
     });
-    this.route('settings.apps', {path: '/settings/apps'}, function () {
+    this.route('settings.apps', {path: '/config/apps'}, function () {
         this.route('slack', {path: 'slack'});
         this.route('amp', {path: 'amp'});
         this.route('unsplash', {path: 'unsplash'});
